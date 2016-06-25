@@ -4,6 +4,8 @@
  */
 
 const pascalTriangle = (n) => {
+  if (!Number.isInteger(n)) return console.log(n + ' is not an Integer');
+
   let lines = [];
 
   for (let i = 0; i < n; i++) {

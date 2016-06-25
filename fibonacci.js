@@ -4,6 +4,8 @@
  */
 
 const fibonacci = (n) => {
+  if (!Number.isInteger(n)) return console.log(n + ' is not an Integer');
+
   let a = 0, b = 1;
 
   const recursion = (a, b, n) => {
