@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that prints whether a number is prime or not.
  * @param n
