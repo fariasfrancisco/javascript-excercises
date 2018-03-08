@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function of String that receives a number as a parameter and returns the string repeated that amount of times.
  * @param n
