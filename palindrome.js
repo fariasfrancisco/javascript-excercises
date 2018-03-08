@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that prints whether a word is a palindrome or not.
  * @param word
