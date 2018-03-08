@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that returns the most common string in a given string array.
  * (if more than one string appears the same amount of times, only the first one will be printed).
