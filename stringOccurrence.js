@@ -5,21 +5,21 @@
  * @param stringArray
  */
 
-const occurrence = (stringArray) => {
-  let times = 0,
-    l = stringArray.length,
-    mostCommon = '',
-    aux;
+function occurrence (stringArray) {
+  const l = stringArray.length
+  let times = 0
+  let mostCommon
+  let aux
 
   for (let i = 0; i < l; i++) {
-    aux = 1;
+    aux = 1
 
     for (let j = i + 1; j < l; j++) {
-      if (stringArray[i] === stringArray[j]) aux++;
+      if (stringArray[i] === stringArray[j]) aux++
     }
 
-    if (aux > times) mostCommon = stringArray[i];
+    if (aux > times) mostCommon = stringArray[i]
   }
 
-  console.log(mostCommon, times);
-};
+  console.log(mostCommon, times)
+}
