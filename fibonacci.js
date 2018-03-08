@@ -3,32 +3,29 @@
  * @param n
  */
 
-const fibonacci = (n) => {
-  if (!Number.isInteger(n)) return console.log(n + ' is not an Integer');
-
-  let a = 0, b = 1;
-
-  const recursion = (a, b, n) => {
-    console.log(a + b);
+function fibonacci (n) {
+  function recursion (a, b, n) {
+    console.log(a + b)
 
     if (n > 2) {
-      const aux = a + b;
+      const aux = a + b
 
-      a = b;
-      b = aux;
-      n--;
+      a = b
+      b = aux
+      n--
 
-      recursion(a, b, n);
+      recursion(a, b, n)
     }
-  };
-
-  if (n < 1) return;
+  }
+ 
+  if (!Number.isInteger(n)) return console.log(`${n} is not an Integer`)
+  if (n < 1) return
+  
+  let a = 0
+  let b = 1
 
   console.log(a);
 
-  if (n > 1) console.log(b);
-
-  if (n > 2) {
-    recursion(a, b, n);
-  }
-};
+  if (n > 1) console.log(b)
+  if (n > 2) recursion(a, b, n)
+}
