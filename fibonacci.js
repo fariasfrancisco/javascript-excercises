@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that uses recursion to write n numbers of the fibonacci series.
  * @param n
