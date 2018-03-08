@@ -3,13 +3,14 @@
  * @param n
  */
 
-String.prototype.repetify = String.prototype.repetify || function (n) {
-    let out = '';
+function repetify (n) {
+  let out = ''
 
-    for (let i = 0; i < n; i++) {
-      out += this;
-    }
+  for (let i = 0; i < n; i++) {
+    out += this
+  }
 
-    return out;
-  };
+  return out
+}
 
+String.prototype.repetify = String.prototype.repetify || repetify
