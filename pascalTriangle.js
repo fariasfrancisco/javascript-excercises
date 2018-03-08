@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that prints the first n lines of the Pascal Triangle.
  * @param n
