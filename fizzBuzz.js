@@ -1,3 +1,5 @@
+'use strict'
+
 /***
  * Write a function that prints n lines of Fizz Buzz.
  * @param n
