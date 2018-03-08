@@ -24,7 +24,7 @@ function fibonacci (n) {
   let a = 0
   let b = 1
 
-  console.log(a);
+  console.log(a)
 
   if (n > 1) console.log(b)
   if (n > 2) recursion(a, b, n)
