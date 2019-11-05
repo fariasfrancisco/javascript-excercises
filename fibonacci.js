@@ -31,3 +31,15 @@ function fibonacci (n) {
   if (n > 1) console.log(b)
   if (n > 2) recursion(a, b, n)
 }
+
+function getFibonacciAt (n) {
+  function recursiveFibonacci(n) {
+    if (n < 2) return 1
+    
+    return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2)
+  }
+  
+  if (!Number.isInteger(n)) return console.error(`${n} is not an Integer`)
+  
+  return recursiveFibonacci(n)
+}
